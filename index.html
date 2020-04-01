@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+</head>
+<body>
+
+    <section class="wrapper">
+        <header class="header">
+            <div class="grid">
+                <div class="wide">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a href="" class="header__link">
+                                <img src="./assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <nav class="nav c-0">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" onmouseover="hover(this)" onmouseout="unhover(this)">Phim</a>
+                                    <ul class="nav__list-option">
+                                        <li class="nav__item-option">
+                                            <a href="" class="nav__link-option">Tất cả phim</a>
+                                        </li>
+                                        <li class="nav__item-option">
+                                            <a href="" class="nav__link-option">Phim đang chiếu</a>
+                                        </li>
+                                        <li class="nav__item-option">
+                                            <a href="" class="nav__link-option">Phim sắp chiếu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" onmouseover="hover(this)" onmouseout="unhover(this)">Rạp</a>
+                                    <ul class="nav__list-option">
+                                        <li class="nav__item-option">
+                                            <a href="" class="nav__link-option">Tất cả Rạp</a>
+                                        </li>
+                                        <li class="nav__item-option">
+                                            <a href="" class="nav__link-option">Rạp đặc biệt</a>
+                                        </li>
+                                        <li class="nav__item-option">
+                                            <a href="" class="nav__link-option">Rạp sắp mở</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__link" onmouseover="hover(this)" onmouseout="unhover(this)">Tin Tức</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__user">
+                            <span class="user__avatar">
+                                <span class="darkmode"></span>
+                            </span>
+                            <span class="user__name c-0">
+                                <img class="user__img" src="./assets/images/user.png" alt="">
+                                Tùng Nguyễn
+                                <div class="user__wrapper">
+                                    <ul class="user__list">
+                                        <li class="user__item">
+                                            <a href="" class="user__link">Thông tin</a>
+                                        </li>
+                                        <li class="user__item">
+                                            <a href="" class="user__link">Ưu đãi</a>
+                                        </li>
+                                        <li class="user__item">
+                                            <a href="" class="user__link">Đăng xuất</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </span>
+
+
+                            <label for="menu__btn" class="menu l-0 m-0">
+                                <span class="bg__dark"></span>
+                                <span class="bg__dark"></span>
+                                <span class="bg__dark"></span>
+                            </label>
+                            <input type="checkbox" id="menu__btn" hidden>
+                            <div class="menu__wrapper">
+                                <div class="menu__control">
+                                    <a href="#" class="menu__logo">
+                                        <img src="./assets/images/logo.png" alt="">
+                                    </a>
+                                    <label for="menu__btn" class="menu__close">X</label>
+                                </div>
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a  class="menu__link" onclick="showItem(0)">
+                                            <img src="./assets/images/ico-angle-right.png" alt="">
+                                            Phim
+                                        </a>
+                                        <ul class="menu__list__child">
+                                            <li class="menu__item__child">
+                                                <a href="" class="menu__link__child">Tất cả phim</a>
+                                            </li>
+                                            <li class="menu__item__child">
+                                                <a href="" class="menu__link__child">Phim đang chiếu</a>
+                                            </li>
+                                            <li class="menu__item__child">
+                                                <a href="" class="menu__link__child">Phim sắp chiếu</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a  class="menu__link" onclick="showItem(1)">
+                                            <img src="./assets/images/ico-angle-right.png" alt="">    
+                                            Rạp
+                                        </a>
+                                        <ul class="menu__list__child">
+                                            <li class="menu__item__child">
+                                                <a href="" class="menu__link__child">Tất cả Rạp</a>
+                                            </li>
+                                            <li class="menu__item__child">
+                                                <a href="" class="menu__link__child">Rạp đặc biệt</a>
+                                            </li>
+                                            <li class="menu__item__child">
+                                                <a href="" class="menu__link__child">Rạp sắp mở</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">Tin Tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="slide">
+            <div class="swiper-container slide__container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-hash="slide1">
+                      <img class="slide__img" src="./assets/images/slide1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide" data-hash="slide2">
+                      <img class="slide__img" src="./assets/images/slide2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide" data-hash="slide3">
+                      <img class="slide__img" src="./assets/images/slide3.jpg" alt="">
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination slide__control"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <div class="grid">
+                <div class="wide">
+                    <div class="schedule__wrapper">
+                        <article class="schedule__heading">
+                            <span class="schedule__btn schedule__prev" data-filter=".dangchieu">Đang chiếu</span>
+                            <span class="schedule__btn schedule__next" data-filter=".sapchieu">Sắp chiếu</span>
+                        </article>
+                        <div class="schedule__container">
+                            <div class="row">
+                                <div class="col l-4 mix dangchieu m-12 c-12">
+                                    <div class="schedule__info">
+                                        <img src="./assets/images/slide1.jpg" alt="">
+                                        <a href="" class="schedule__link">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <div class="col l-4 mix dangchieu m-12 c-12">
+                                    <div class="schedule__info">
+                                        <img src="./assets/images/slide2.jpg" alt="">
+                                        <a href="" class="schedule__link">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <div class="col l-4 mix dangchieu m-12 c-12">
+                                    <div class="schedule__info">
+                                        <img src="./assets/images/slide3.jpg" alt="">
+                                        <a href="" class="schedule__link">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <div class="col l-4 mix dangchieu m-12 c-12">
+                                    <div class="schedule__info">
+                                        <img src="./assets/images/slide3.jpg" alt="">
+                                        <a href="" class="schedule__link">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <div class="col l-4 mix sapchieu m-12 c-12">
+                                    <div class="schedule__info">
+                                        <img src="./assets/images/slide3.jpg" alt="">
+                                        <a href="" class="schedule__link">Xem Thêm</a>
+                                    </div>
+                                </div>
+                                <div class="col l-4 mix sapchieu m-12 c-12">
+                                    <div class="schedule__info">
+                                        <img src="./assets/images/slide3.jpg" alt="">
+                                        <a href="" class="schedule__link">Xem Thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="grid">
+                <div class="wide">
+                    <div class="review__wrapper">
+                        <article class="review__heading">REVIEW</article>
+                        <ul class="review__list">
+                            <li class="review__item">
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12">
+                                        <img src="./assets/images/slide1.jpg" alt="">
+                                    </div>
+                                    <div class="col l-8 m-12 c-12">
+                                        <h3 class="review__name">AVENGERS: END GAME</h3>
+                                        <p class="review__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis eaque laudantium cupiditate quia optio culpa illo repellendus corporis beatae sint veritatis eius harum eligendi odio, molestias esse reprehenderit dolorum!</p>
+                                        <p class="review__vote">
+                                            Vote: <span class="review__vote__count">8859</span> (Point)
+                                        </p>
+                                        <div class="review__control">
+                                            <a href="#" class="review__btn review__read">Đọc thêm</a>
+                                            <label for="show__modal" class="review__btn review__trailer">Trailer</label>
+                                            <input type="checkbox" id="show__modal" hidden>
+                                            <div class="modal__trailer">
+                                                <label for="show__modal" class="modal__bg-collapse"></label>
+                                                <div class="modal__wrapper">
+                                                    <iframe class="modal__video" src="https://www.youtube.com/embed/TcMBFSGVi1c" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="review__item">
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12">
+                                        <img src="./assets/images/slide2.jpg" alt="">
+                                    </div>
+                                    <div class="col l-8 m-12 c-12">
+                                        <h3 class="review__name">Diệp Vấn Ngoại Truyện: Trương Thiên Chí</h3>
+                                        <p class="review__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis eaque laudantium cupiditate quia optio culpa illo repellendus corporis beatae sint veritatis eius harum eligendi odio, molestias esse reprehenderit dolorum!</p>
+                                        <p class="review__vote">
+                                            Vote: <span class="review__vote__count">8859</span> (Point)
+                                        </p>
+                                        <div class="review__control">
+                                            <a href="#" class="review__btn review__read">Đọc thêm</a>
+                                            <label for="show__modal2" class="review__btn review__trailer">Trailer</label>
+                                            <input type="checkbox" id="show__modal2" hidden>
+                                            <div class="modal__trailer">
+                                                <label for="show__modal2" class="modal__bg-collapse"></label>
+                                                <div class="modal__wrapper">
+                                                    <iframe class="modal__video" src="https://www.youtube.com/embed/6b5fS2y631s" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="review__item">
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12">
+                                        <img src="./assets/images/slide3.jpg" alt="">
+                                    </div>
+                                    <div class="col l-8 m-12 c-12">
+                                        <h3 class="review__name">Wonder Woman 1984</h3>
+                                        <p class="review__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis eaque laudantium cupiditate quia optio culpa illo repellendus corporis beatae sint veritatis eius harum eligendi odio, molestias esse reprehenderit dolorum!</p>
+                                        <p class="review__vote">
+                                            Vote: <span class="review__vote__count">8859</span> (Point)
+                                        </p>
+                                        <div class="review__control">
+                                            <a href="#" class="review__btn review__read">Đọc thêm</a>
+                                            <label for="show__modal3" class="review__btn review__trailer">Trailer</label>
+                                            <input type="checkbox" id="show__modal3" hidden>
+                                            <div class="modal__trailer">
+                                                <label for="show__modal3" class="modal__bg-collapse"></label>
+                                                <div class="modal__wrapper">
+                                                    <iframe class="modal__video" src="https://www.youtube.com/embed/sfM7_JLk-84" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="wide">
+                    <div class="footer__wrapper">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-12">
+                                <article class="footer__heading">ThaTu Cinema</article>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Giới Thiệu</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Tiện Ích</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Chính Sách</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Tuyển Dụng</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Liên hệ Quảng Cáo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <article class="footer__heading">Điều khoản sử dụng</article>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Điều Khoản Chung</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Điều Khoản Giao Dịch</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Câu Hỏi Thường Gặp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <article class="footer__heading">Chăm sóc khách hàng</article>
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <p class="footer__text">Hotline: 0921 848 825</p>
+                                    </li>
+                                    <li class="footer__item">
+                                        <p class="footer__text">Giờ làm việc: 8:00 - 22:00(Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="mailto:nthanhtung9x@gmail.com" class="footer__link" onmouseover="hover(this)" onmouseout="unhover(this)">Email hỗ trợ: nthanhtung9x@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="scroll">
+        </div>
+    </section>
+
+
+
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

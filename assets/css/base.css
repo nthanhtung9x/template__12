@@ -1,0 +1,33 @@
+:root {
+  --primary-color:#DC3545;
+  --second-color:#343A40;
+  --third-color: #007BFF;
+  --bg-color: #e2e6ea;
+  --header-darkmode: #151935;
+  --bg-darkmode: #222b54; }
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+html {
+  font-size: 62.5%; }
+
+.grid {
+  display: block;
+  width: 100%; }
+
+.wide {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+/*# sourceMappingURL=base.css.map */
